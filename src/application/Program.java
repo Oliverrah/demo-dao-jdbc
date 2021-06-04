@@ -17,12 +17,15 @@ public class Program {
 		System.out.println(sd.findById(7));
 		
 		System.out.println("\n === TESTE 2: seller findByDepartment ====");
-		Department dep = new Department(2, null);
-		
-		
-		List<Seller> list = sd.findByDepartment(dep);
-		
+		Department dep = new Department(2, null);		
+		List<Seller> list = sd.findByDepartment(dep);	
 		for(Seller s : list) {
+			System.out.println(s);
+		}
+		
+		System.out.println("\n === TESTE 3: seller findAll ====");
+		list = sd.findAll();
+		for(Seller s : list){
 			System.out.println(s);
 		}
 
