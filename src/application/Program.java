@@ -31,10 +31,17 @@ public class Program {
 		}
 		
 		System.out.println("\n === TESTE 4: seller insert ====");
-		
-		Seller seller = new Seller(null, "Mariana", "mariana@gmail.com", new Date(), 2.500, dep);
+		Seller seller = new Seller(null, "Larissa", "larissa@gmail.com", new Date(), 2.500, dep);
 		sd.insert(seller);
 		System.out.println("Inserted, new id = " + seller.getId());
+		
+		
+		System.out.println("\n === TESTE 5: seller update ====");
+		
+		seller.setName("Juliana");
+		sd.update(seller);
+		
+		System.out.println("Updated!");
 
 	}
 
